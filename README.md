@@ -109,7 +109,7 @@ The process involves:
 
 Microsoft servers can generate new GDID even if the hardware configuration remains the same.
 
-<b>For better separation between registrations, changing hardware identifiers before re-registration may produce different results. Hardware attributes such as TPM information may contribute to device identity matching.</b>
+<b>For better separation between new GDID registrations, changing hardware identifiers is recommended. Hardware attributes such as TPM information may contribute to device identity matching.</b>
 
 ---
 

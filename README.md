@@ -4,7 +4,7 @@ Script that regenerates GDID assigned to your windows installation. It works by 
 
 Requires an internet connection. A new GDID is usually issued instantly, but script needs around 30–90 seconds to complete the job.
 
-<u><i>Use caution on domain-joined systems or managed environments. Removing device registration data may affect identity, authentication, management, or organizational enrollment states.</i></u>
+<u><i>**Use caution** on domain-joined systems or managed environments. Removing device registration data may affect identity, authentication, management, or organizational enrollment states. Do not use if your setup includes windows SSO or AD. This script might remove more session tokens than it should</i></u>
 
 <b>The script can force issuance of a new GDID even on the same hardware, but changing hardware identifiers before re-registration is recommended (see the end of this page).</b>
 

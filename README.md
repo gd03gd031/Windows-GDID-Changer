@@ -1,6 +1,6 @@
 # GDID-Changer for Windows 10/11
 
-Script that regenerates GDID assigned to your windows installation. It works by removing existing sessions and forcing new device registration. Resulting in issuance of new GDID from Microsoft servers.
+Script that regenerates GDID assigned to your windows installation. It works by removing existing sessions and forcing new device registration. Resulting in issuance of new GDID by Microsoft servers.
 
 Requires an internet connection. A new GDID is usually issued instantly, but script needs around 30–90 seconds to complete the job.
 

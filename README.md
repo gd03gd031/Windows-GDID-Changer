@@ -8,7 +8,7 @@ Requires an internet connection. A new GDID is usually issued instantly, but scr
 
 <b>The script can force issuance of a new GDID even on the same hardware, but changing hardware identifiers before re-registration is recommended (see the end of this page).</b>
 
-Tested in a local virtual machine environment on Windows 11 using a local account. The device registration process was confirmed by intercepting network traffic.
+Tested in a local virtual machine environment on Windows 11 and Windows 10 using a local account. The device registration process was confirmed by intercepting network traffic.
 
 <img width="857" height="279" alt="1" src="https://github.com/user-attachments/assets/71ca180c-9a5d-46a5-a12e-2e95535b55b6" />
 

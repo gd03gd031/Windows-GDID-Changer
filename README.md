@@ -6,7 +6,7 @@ Requires an internet connection. A new GDID is usually issued instantly, but scr
 
 <u><i>**Use caution** on domain-joined systems or managed environments. Removing device registration data may affect session states. Do not use this script if your environment relies on Windows SSO or Active Directory (AD), as it may disrupt authentication. This script removes Microsoft session and device tokens stored locally on the device. It attempts to identify and remove only the relevant tokens, but users may be signed out of services such as Microsoft Store, Xbox App, OneDrive, Microsoft 365 (Office 365) and Teams.</i></u>
 
-<b>The script can force issuance of a new GDID even on the same hardware, but changing hardware identifiers before re-registration is recommended (see the end of this page).</b>
+The script can force issuance of a new GDID even on the same hardware, but changing hardware identifiers before re-registration is recommended (see the end of this page).
 
 Tested in a local virtual machine environment on Windows 11 and Windows 10 using a local account. The device registration process was confirmed by intercepting network traffic.
 
@@ -64,7 +64,7 @@ Example structure:
 
 Each component identifier corresponds to a specific hardware data source. Refer to the table at the end of this page for additional details and descriptions of each component.
 
-3. Microsoft servers process this information and return a `GlobalDeviceID`.
+3. Microsoft servers process this information and returns a `GlobalDeviceID`.
 
 Example:
 
@@ -72,7 +72,11 @@ Example:
 <GlobalDeviceID>00XXXXXXXXXXXXX</GlobalDeviceID>
 ```
 
-The returned GDID is a hexadecimal identifier. Windows stores this identifier locally as part of device identity information.
+The returned GDID is a hexadecimal identifier. Windows stores this identifier locally in multiple registry keys as part of device identity information. You can check your current GDID in hexadecimal format here:
+
+```
+Computer\HKEY_USERS\.DEFAULT\Software\Microsoft\IdentityCRL\ExtendedProperties.LID
+```
 
 When converted from hexadecimal to decimal, it produces the value shown in the indictment format:
 
@@ -82,7 +86,7 @@ g:DECIMAL_DIGITS
 
 4. Additional session information is stored and associated with this device registration.
 
-The GDID remains persisted with the Windows installation and is reused for future device identity operations.
+The GDID remains persisted with the Windows installation and is reused for future device identity operations. 
 
 <img width="568" height="auto" alt="image" src="https://github.com/user-attachments/assets/055461c2-eed3-496a-83b3-59bfd7b41b5c" />
 <br />

@@ -4,7 +4,7 @@ Script that regenerates GDID assigned to your windows installation. It works by 
 
 Requires an internet connection. A new GDID is usually issued instantly, but script needs around 30–90 seconds to complete the job.
 
-<u><i>**Use caution** on domain-joined systems or managed environments. Removing device registration data may affect session states. Do not use if your setup includes windows SSO or Active Directory (AD). This script removes microsoft session device tokens stored on the device. The script attempts to find the right tokens to delete, but you can get logged out from Microsoft Store, Xbox App, OneDrive, Office365, Teams </i></u>
+<u><i>**Use caution** on domain-joined systems or managed environments. Removing device registration data may affect session states. Do not use this script if your environment relies on Windows SSO or Active Directory (AD), as it may disrupt authentication. This script removes Microsoft session and device tokens stored locally on the device. It attempts to identify and remove only the relevant tokens, but users may be signed out of services such as Microsoft Store, Xbox App, OneDrive, Microsoft 365 (Office 365) and Teams.</i></u>
 
 <b>The script can force issuance of a new GDID even on the same hardware, but changing hardware identifiers before re-registration is recommended (see the end of this page).</b>
 

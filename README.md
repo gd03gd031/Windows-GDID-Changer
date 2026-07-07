@@ -1,4 +1,4 @@
-# GDID-Changer
+# GDID-Changer for Windows 10/11
 
 Script that regenerates GDID assigned to your windows installation. It works by removing existing sessions and forcing new device registration. Resulting in issuance of new GDID from Microsoft servers.
 

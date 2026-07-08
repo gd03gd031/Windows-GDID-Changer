@@ -3,9 +3,11 @@
 Script that regenerates GDID assigned to your windows installation. It works by removing existing sessions and forcing new device registration. Resulting in issuance of new GDID by Microsoft servers.
 This script initiates exactly the same device registration process that occurs after a fresh Windows installation.
 
-Requires an internet connection. A new GDID is usually issued instantly, but script needs around 30–90 seconds to complete the job.
+Requires an internet connection and administrator permissions. A new GDID is usually issued instantly, but script needs around 30–90 seconds to complete the job.
 
 <u><i>**Use caution** on domain-joined systems or managed environments. Removing device registration data may affect session states. Do not use this script if your environment relies on Windows SSO or Active Directory (AD), as it may disrupt authentication. This script removes Microsoft session and device tokens stored locally on the device. It attempts to identify and remove only the relevant tokens, but users may be signed out of services such as Microsoft Store, Xbox App, OneDrive, Microsoft 365 (Office 365) and Teams.</i></u>
+
+<b>Shortly after we published this script, several copycat projects appeared, offering AI-generated "regenerators" based on our work and claiming to include "unique" research. We strongly recommend against using them. In many cases, little to no original research was conducted beyond launching an AI tool, and there was no proper verification of whether the traffic was actually being blocked through telemetry analysis or Windows network traffic inspection. One example is the  [Korben00/no-gdid](https://github.com/Korben00/no-gdid) (maybe you should add credits you ****?) </b>
 
 The script can force issuance of a new GDID even on the same hardware, but changing hardware identifiers before re-registration is recommended (see the end of this page).
 

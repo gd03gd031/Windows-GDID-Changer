@@ -7,13 +7,13 @@ Requires an internet connection and administrator permissions. A new GDID is usu
 
 <u><i>**Use caution** on domain-joined systems or managed environments. Removing device registration data may affect session states. Do not use this script if your environment relies on Windows SSO or Active Directory (AD), as it may disrupt authentication. This script removes Microsoft session and device tokens stored locally on the device. It attempts to identify and remove only the relevant tokens, but users may be signed out of services such as Microsoft Store, Xbox App, OneDrive, Microsoft 365 (Office 365) and Teams.</i></u>
 
-**Notice:** Shortly after we published this script, several copycat projects appeared, offering AI-generated "regenerators" and claiming to include "unique" research. We strongly recommend against using them. In many cases, little to no original research was conducted beyond launching an AI tool, and there was no proper verification of whether the traffic was actually being blocked through telemetry analysis or Windows network traffic inspection</b>. One example is the  https://github.com/Korben00/no-gdid. The script included in that repo reads the PUID/GDID from wrong registry key and does not perform proper session invalidation at all **
-
 The script can force issuance of a new GDID even on the same hardware, but changing hardware identifiers before re-registration is recommended (see the end of this page).
 
 Tested in a local virtual machine environment on Windows 11 and Windows 10 using a local account. The device registration process was confirmed by intercepting network traffic.
 
 <img width="857" height="279" alt="1" src="https://github.com/user-attachments/assets/71ca180c-9a5d-46a5-a12e-2e95535b55b6" />
+
+**Notice:** Shortly after we published this script, several copycat projects appeared, offering AI-generated "regenerators" and claiming to include "unique" research. We strongly recommend against using them. In many cases, little to no original research was conducted beyond launching an AI tool, and there was no proper verification of whether the traffic was actually being blocked through telemetry analysis or Windows network traffic inspection</b>. One example is the  _Korben00/no-gdid_. The script included in that repo reads the PUID/GDID from incorrect registry key and does not perform proper session invalidation at all **
 
 ---
 

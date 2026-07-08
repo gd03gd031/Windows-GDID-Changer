@@ -9,11 +9,9 @@ Requires an internet connection and administrator permissions. A new GDID is usu
 
 The script can force issuance of a new GDID even on the same hardware, but changing hardware identifiers before re-registration is recommended (see the end of this page).
 
-Tested in a local virtual machine environment on Windows 11 and Windows 10 using a local account. The device registration process was confirmed by intercepting network traffic.
+Tested in a local virtual machine environment on Windows 11 and Windows 10 using a local account. The device registration process was confirmed by intercepting network traffic. The research was performed manually
 
 <img width="857" height="279" alt="1" src="https://github.com/user-attachments/assets/71ca180c-9a5d-46a5-a12e-2e95535b55b6" />
-
-**Notice:** Shortly after we published this script,  copycat project appeared, offering AI-generated "regenerator". We strongly recommend against using it. In many cases, little to no original research was conducted beyond launching an AI tool, and there was no proper verification of whether the traffic was actually being blocked through telemetry analysis or Windows network traffic inspection</b>. One example is the  _Korben00/no-gdid_. The script included in that repo reads the PUID/GDID from incorrect registry key and does not perform proper session invalidation at all 
 
 ---
 

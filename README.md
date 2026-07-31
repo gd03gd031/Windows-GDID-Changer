@@ -11,7 +11,7 @@ The script can force issuance of a new GDID even on the same hardware, but chang
 
 Tested in a local virtual machine environment on Windows 11 and Windows 10 using a local account. The device registration process was confirmed by intercepting network traffic. **The research was performed manually**
 
-Notice: Please be aware that using various other "research" repositories may yield different GDID values. This discrepancy is because these repositories reference an incorrect registry key for retrieving the GDID value.
+Notice: Please be aware that using various other "research" repositories may yield different GDID values on Windows 11. This discrepancy is because these repositories reference an incorrect registry key for retrieving the GDID value.
 This situation occurs due to the AI-driven nature of their research without any kind of manual network validation. We can fully vouch that what you get here is correct GDID value and it has been confirmed by network interception.
 
 TLDR: People are posting AI research without even understanding if it's correct and validating their findings. 3/4 of repos related to GDID are pointing to the wrong registry key. We live in times where people put AI on, get results, put them on github without any kind of validation of the findings.

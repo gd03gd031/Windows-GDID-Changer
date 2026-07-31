@@ -9,7 +9,7 @@ Requires an internet connection and administrator permissions. A new GDID is usu
 
 The script can force issuance of a new GDID even on the same hardware, but changing hardware identifiers before re-registration is recommended (see the end of this page).
 
-Tested in a local virtual machine environment on Windows 11 and Windows 10 using a local account. The device registration process was confirmed by intercepting network traffic. The research was performed manually
+Tested in a local virtual machine environment on Windows 11 and Windows 10 using a local account. The device registration process was confirmed by intercepting network traffic. **The research was performed manually**
 
 <img width="857" height="279" alt="1" src="https://github.com/user-attachments/assets/71ca180c-9a5d-46a5-a12e-2e95535b55b6" />
 

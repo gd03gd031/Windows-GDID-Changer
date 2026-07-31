@@ -11,8 +11,8 @@ The script can force issuance of a new GDID even on the same hardware, but chang
 
 Tested in a local virtual machine environment on Windows 11 and Windows 10 using a local account. The device registration process was confirmed by intercepting network traffic. **The research was performed manually**
 
-**Notice: Please be aware that using various other "research" repositories may yield different GDID values. This discrepancy is because these repositories reference an incorrect registry key for retrieving the GDID value.
-This situation occurs due to the AI-driven nature of their research without any kind of manual network validation. We can fully vouch that what you get here is correct GDID value and it has been confirmed by network interception**
+Notice: Please be aware that using various other "research" repositories may yield different GDID values. This discrepancy is because these repositories reference an incorrect registry key for retrieving the GDID value.
+This situation occurs due to the AI-driven nature of their research without any kind of manual network validation. We can fully vouch that what you get here is correct GDID value and it has been confirmed by network interception
 
 <img width="857" height="279" alt="1" src="https://github.com/user-attachments/assets/71ca180c-9a5d-46a5-a12e-2e95535b55b6" />
 

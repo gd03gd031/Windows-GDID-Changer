@@ -14,7 +14,7 @@ Tested in a local virtual machine environment on Windows 11 and Windows 10 using
 Notice: Please be aware that using various other "research" repositories may yield different GDID values on Windows 11. This discrepancy is because these repositories reference an incorrect registry key for retrieving the GDID value.
 This situation occurs due to the AI-driven nature of their research without any kind of manual network validation. We can fully vouch that what you get here is correct GDID value and it has been confirmed by network interception.
 
-People are posting AI research without validating their findings. 3/4 of repos related to GDID are pointing to the wrong registry key. We live in times where people put AI on, get results, put them on github without any kind of validation of the findings. Our repos is the only one where you will find description of network flow because we did network verification to ensure you indeed get new GDID assigned by microsoft's servers.
+People are posting AI research without validating their findings. 3/4 of repos related to GDID are pointing to the wrong registry key. We live in times where people put AI on, get results, put them on github without any kind of validation of the findings. Our repo is the only one where you will find description of network flow because we did network verification to ensure you indeed get new GDID assigned by microsoft's servers.
 
 <img width="857" height="279" alt="1" src="https://github.com/user-attachments/assets/71ca180c-9a5d-46a5-a12e-2e95535b55b6" />
 
